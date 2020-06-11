@@ -10,6 +10,7 @@ public class NestedData implements java.io.Serializable {
 
 	private com.myspace.datamodel_test.TestDataModel dataList;
 	private java.lang.String name;
+     private java.util.List<com.myspace.datamodel_test.TestDataModel> bus_dim_list_field;	
 
 	public NestedData() {
 	}
