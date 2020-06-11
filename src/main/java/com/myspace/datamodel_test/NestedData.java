@@ -6,12 +6,34 @@ package com.myspace.datamodel_test;
 
 public class NestedData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public NestedData() {
-    }
+	private com.myspace.datamodel_test.TestDataModel dataList;
+	private java.lang.String name;
 
+	public NestedData() {
+	}
 
+	public com.myspace.datamodel_test.TestDataModel getDataList() {
+		return this.dataList;
+	}
 
+	public void setDataList(com.myspace.datamodel_test.TestDataModel dataList) {
+		this.dataList = dataList;
+	}
+
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public NestedData(com.myspace.datamodel_test.TestDataModel dataList,
+			java.lang.String name) {
+		this.dataList = dataList;
+		this.name = name;
+	}
 
 }
