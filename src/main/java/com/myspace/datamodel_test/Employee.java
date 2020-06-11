@@ -6,12 +6,54 @@ package com.myspace.datamodel_test;
 
 public class Employee implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Employee() {
-    }
+	private java.lang.Integer id;
+	private java.lang.String name;
+	private java.lang.String dept;
+	private java.lang.Long salary;
 
+	public Employee() {
+	}
 
+	public java.lang.Integer getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.Integer id) {
+		this.id = id;
+	}
+
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.String getDept() {
+		return this.dept;
+	}
+
+	public void setDept(java.lang.String dept) {
+		this.dept = dept;
+	}
+
+	public java.lang.Long getSalary() {
+		return this.salary;
+	}
+
+	public void setSalary(java.lang.Long salary) {
+		this.salary = salary;
+	}
+
+	public Employee(java.lang.Integer id, java.lang.String name,
+			java.lang.String dept, java.lang.Long salary) {
+		this.id = id;
+		this.name = name;
+		this.dept = dept;
+		this.salary = salary;
+	}
 
 }
